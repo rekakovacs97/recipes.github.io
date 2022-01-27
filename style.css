@@ -7,6 +7,11 @@ body {
   font-family: cursive;
 }
 
+.nav {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
 .nav ul {
   list-style: none;
   display: -webkit-box;
@@ -18,6 +23,23 @@ body {
   padding: 10px 20px;
 }
 
+.nav ul li .style-a-nav {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.nav ul li .img-nav {
+  width: 270px;
+  height: 255px;
+}
+
+.nav ul li .stylefigcaption {
+  font-size: 20px;
+  font-family: cursive;
+  text-align: center;
+  background-color: #a0a0c2;
+}
+
 .container {
   width: 100%;
   display: -webkit-box;
@@ -26,8 +48,8 @@ body {
 }
 
 .container .sidebar-first {
-  width: 20%;
-  background-color: rgba(231, 164, 119, 0.856);
+  width: 25%;
+  background-color: rgba(145, 151, 240, 0.856);
 }
 
 .container .sidebar-first .title-sidebar {
@@ -35,13 +57,13 @@ body {
 }
 
 .container .sidebar-first .img-recipe {
-  width: 180px;
-  height: 210px;
+  width: 230px;
+  height: 270px;
 }
 
 .container .content {
-  width: 60%;
-  background-color: blue;
+  width: 55%;
+  background-color: #7c7ca8;
   margin-left: 20px;
   margin-right: 20px;
 }
@@ -58,6 +80,6 @@ body {
 
 .container .sidebar-second {
   width: 20%;
-  background-color: blueviolet;
+  background-color: #a89deb;
 }
 /*# sourceMappingURL=style.css.map */

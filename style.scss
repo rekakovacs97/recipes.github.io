@@ -8,19 +8,33 @@ body {
 }
 
 .nav {
+    margin-top: 25px;
+    margin-bottom: 25px;
+
     ul { 
         list-style: none;
         display: flex;
 
         li{
             padding: 10px 20px;  
-            
-            .img-nav {
-                width: 100px;
-                height: 100px;
-}
+
+            .style-a-nav {
+                text-decoration: none;
+                color: aliceblue;
             }
-        }
+
+            .img-nav {
+                width: 270px;
+                height: 255px;    
+            }
+
+            .stylefigcaption{
+                font-size: 20px;
+                font-family: cursive;
+                text-align: center;
+                background-color: rgb(160, 160, 194);
+            }
+        }   
     }
 }
 
@@ -29,22 +43,22 @@ body {
     display: flex;
 
     .sidebar-first {
-        width: 20%;
-        background-color: rgba(231, 164, 119, 0.856);
+        width: 25%;
+        background-color: rgba(145, 151, 240, 0.856);
 
         .title-sidebar{
             margin: 15px;
         }
 
         .img-recipe {
-            width: 180px;
-            height: 210px;
+            width: 230px;
+            height: 270px;
         }
     }
 
     .content {
-        width: 60%;
-        background-color: blue;
+        width: 55%;
+        background-color: rgb(124, 124, 168);
         margin-left: 20px;
         margin-right: 20px;  
         
@@ -61,6 +75,6 @@ body {
 
     .sidebar-second {
         width: 20%;
-        background-color: blueviolet;
+        background-color: rgb(168, 157, 235);
     }
 }
