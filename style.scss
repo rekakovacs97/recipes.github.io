@@ -1,0 +1,47 @@
+body {
+    margin: 20px;
+    background-color: rgb(206, 162, 108);
+}
+
+.header {
+    font-family: cursive;
+}
+
+.nav {
+    ul { 
+        list-style: none;
+        display: flex;
+
+        li{
+            padding: 10px 20px;
+
+            img{
+                border-radius: 20%;
+                width: 60px;
+                height: 50px;
+            }
+        }
+    }
+}
+
+.container {
+    width: 100%;
+    display: flex;
+
+    .sidebar-first {
+        width: 20%;
+        background-color: rgba(231, 164, 119, 0.856);
+    }
+
+    .content {
+        width: 60%;
+        background-color: blue;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .sidebar-second {
+        width: 20%;
+        background-color: blueviolet;
+    }
+}
