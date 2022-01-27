@@ -18,12 +18,6 @@ body {
   padding: 10px 20px;
 }
 
-.nav ul li img {
-  border-radius: 20%;
-  width: 60px;
-  height: 50px;
-}
-
 .container {
   width: 100%;
   display: -webkit-box;
@@ -36,11 +30,30 @@ body {
   background-color: rgba(231, 164, 119, 0.856);
 }
 
+.container .sidebar-first .title-sidebar {
+  margin: 15px;
+}
+
+.container .sidebar-first .img-recipe {
+  width: 180px;
+  height: 210px;
+}
+
 .container .content {
   width: 60%;
   background-color: blue;
   margin-left: 20px;
   margin-right: 20px;
+}
+
+.container .content .title-content {
+  text-align: center;
+  font-family: cursive;
+  margin-right: 15px;
+}
+
+.container .content .elements-content {
+  font-size: 17px;
 }
 
 .container .sidebar-second {

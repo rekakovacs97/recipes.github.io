@@ -13,12 +13,12 @@ body {
         display: flex;
 
         li{
-            padding: 10px 20px;
-
-            img{
-                border-radius: 20%;
-                width: 60px;
-                height: 50px;
+            padding: 10px 20px;  
+            
+            .img-nav {
+                width: 100px;
+                height: 100px;
+}
             }
         }
     }
@@ -31,13 +31,32 @@ body {
     .sidebar-first {
         width: 20%;
         background-color: rgba(231, 164, 119, 0.856);
+
+        .title-sidebar{
+            margin: 15px;
+        }
+
+        .img-recipe {
+            width: 180px;
+            height: 210px;
+        }
     }
 
     .content {
         width: 60%;
         background-color: blue;
         margin-left: 20px;
-        margin-right: 20px;
+        margin-right: 20px;  
+        
+        .title-content {
+            text-align: center;
+            font-family: cursive;
+            margin-right: 15px;
+            }
+        
+        .elements-content {
+            font-size: 17px;
+        }
     }
 
     .sidebar-second {
