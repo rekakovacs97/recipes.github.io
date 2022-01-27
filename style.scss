@@ -5,6 +5,10 @@ body {
 
 .header {
     font-family: cursive;
+    
+    .style-title-header{
+        font-size: 30px;
+    }
 }
 
 .nav {
@@ -47,7 +51,8 @@ body {
         background-color: rgba(145, 151, 240, 0.856);
 
         .title-sidebar{
-            margin: 15px;
+            text-align: center;
+            font-family: cursive;
         }
 
         .img-recipe {
@@ -65,16 +70,25 @@ body {
         .title-content {
             text-align: center;
             font-family: cursive;
-            margin-right: 15px;
             }
         
         .elements-content {
-            font-size: 17px;
+            font-size: 20px;
         }
     }
 
     .sidebar-second {
         width: 20%;
         background-color: rgb(168, 157, 235);
+
+        .style-title-sidebar-second {
+            font-family: cursive;
+            text-align: center;
+        }
+
+        .checklist-container{
+            padding: 0 15px 15px 15px;
+            font-size: 18px;
+        }
     }
 }
