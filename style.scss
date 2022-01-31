@@ -1,6 +1,6 @@
 body {
     margin: 20px;
-    background-color: rgb(206, 162, 108);
+    background-color: #d7ccc0;
 }
 
 .header {
@@ -53,6 +53,7 @@ body {
         .title-sidebar{
             text-align: center;
             font-family: cursive;
+            color: #461240;
         }
 
         .img-recipe {
@@ -70,6 +71,7 @@ body {
         .title-content {
             text-align: center;
             font-family: cursive;
+            color: #461240;
             }
         
         .elements-content {
@@ -83,7 +85,8 @@ body {
 
         .style-title-sidebar-second {
             font-family: cursive;
-            text-align: center;
+            text-align: center;          
+            color: #461240;
         }
 
         .checklist-container{
@@ -92,3 +95,25 @@ body {
         }
     }
 }
+
+.second-container{
+    background-color: a89deb;
+
+    .popular-recipes {
+        display: inline-block;
+        width: calc((100% - 40px) / 4) ;
+        overflow: hidden;
+        background-color: #9f90f5 ;
+
+        .style-popular-recipes{
+            width: 195px;
+            height: 190px;
+        }
+    }
+}
+
+.footer{
+    background-color: chartreuse;
+    text-align: center;
+}
+

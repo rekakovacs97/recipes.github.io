@@ -1,6 +1,6 @@
 body {
   margin: 20px;
-  background-color: #cea26c;
+  background-color: #d7ccc0;
 }
 
 .header {
@@ -59,6 +59,7 @@ body {
 .container .sidebar-first .title-sidebar {
   text-align: center;
   font-family: cursive;
+  color: #461240;
 }
 
 .container .sidebar-first .img-recipe {
@@ -76,6 +77,7 @@ body {
 .container .content .title-content {
   text-align: center;
   font-family: cursive;
+  color: #461240;
 }
 
 .container .content .elements-content {
@@ -90,10 +92,32 @@ body {
 .container .sidebar-second .style-title-sidebar-second {
   font-family: cursive;
   text-align: center;
+  color: #461240;
 }
 
 .container .sidebar-second .checklist-container {
   padding: 0 15px 15px 15px;
   font-size: 18px;
+}
+
+.second-container {
+  background-color: a89deb;
+}
+
+.second-container .popular-recipes {
+  display: inline-block;
+  width: calc((100% - 40px) / 4);
+  overflow: hidden;
+  background-color: #9f90f5;
+}
+
+.second-container .popular-recipes .style-popular-recipes {
+  width: 195px;
+  height: 190px;
+}
+
+.footer {
+  background-color: chartreuse;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
