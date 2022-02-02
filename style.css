@@ -38,7 +38,7 @@ body {
 }
 
 .nav ul li .stylefigcaption {
-  font-size: 20px;
+  font-size: 28px;
   font-family: cursive;
   text-align: center;
   background-color: #a0a0c2;
@@ -63,8 +63,11 @@ body {
 }
 
 .container .sidebar-first .img-recipe {
-  width: 230px;
-  height: 270px;
+  width: 266x;
+  height: 304px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .container .content {
@@ -105,16 +108,35 @@ body {
 }
 
 .second-container .popular-recipes {
+  margin-bottom: 10px;
+  margin-right: 5px;
   display: inline-block;
-  width: calc((100% - 40px) / 3);
-  height: 200px;
+  width: calc((100% - 60px) / 5);
+  height: 245px;
   overflow: hidden;
   background-color: #9f90f5;
 }
 
-.second-container .popular-recipes .style-popular-recipes {
+.second-container .popular-recipes .style-title-popular-recipes {
+  margin: 0;
+  text-align: center;
+  font-family: cursive;
+  color: #f8f9fb;
+  padding: 5px;
+}
+
+.second-container .popular-recipes .style-ol-popular-recipes {
+  margin: 0;
+  padding: 5px 18px 5px 40px;
+  font-size: 18px;
+}
+
+.second-container .popular-recipes .style-img-popular-recipes {
   width: 195px;
   height: 190px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer {
