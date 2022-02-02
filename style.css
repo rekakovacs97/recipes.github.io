@@ -71,7 +71,7 @@ body {
 }
 
 .container .content {
-  width: 55%;
+  width: calc(55% - 40px);
   background-color: #7c7ca8;
   margin-left: 20px;
   margin-right: 20px;
@@ -105,38 +105,59 @@ body {
 
 .second-container {
   background-color: a89deb;
+  font-size: 0;
+}
+
+.second-container .style-title-second-container {
+  font-family: cursive;
+  font-size: 20px;
+}
+
+.second-container .popular-recipes-wrapp .popular-recipes:nth-child(5n) {
+  margin-right: 0;
 }
 
 .second-container .popular-recipes {
   margin-bottom: 10px;
-  margin-right: 5px;
   display: inline-block;
-  width: calc((100% - 60px) / 5);
+  margin-right: 10px;
+  width: calc((100% - 40px) / 5);
   height: 245px;
   overflow: hidden;
   background-color: #9f90f5;
 }
 
-.second-container .popular-recipes .style-title-popular-recipes {
+.second-container .popular-recipes .style-a-popular-recipe {
+  text-decoration: none;
+}
+
+.second-container .popular-recipes .style-a-popular-recipe .style-title-popular-recipes {
   margin: 0;
+  font-size: 20px;
   text-align: center;
   font-family: cursive;
   color: #f8f9fb;
   padding: 5px;
 }
 
-.second-container .popular-recipes .style-ol-popular-recipes {
+.second-container .popular-recipes .style-a-popular-recipe .style-ol-popular-recipes {
   margin: 0;
   padding: 5px 18px 5px 40px;
   font-size: 18px;
 }
 
-.second-container .popular-recipes .style-img-popular-recipes {
+.second-container .popular-recipes .style-a-popular-recipe .style-img-popular-recipes {
   width: 195px;
   height: 190px;
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.third-container .style-img-third-container {
+  display: block;
+  margin-left: 90px;
+  margin-bottom: 25px;
 }
 
 .footer {
