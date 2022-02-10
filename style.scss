@@ -26,6 +26,10 @@ body {
     
     .style-title-header{
         font-size: 30px;
+
+        @media only screen and (max-width: 576px) {
+            font-size: 20px;
+        }
     }
 }
 
@@ -33,9 +37,58 @@ body {
     margin-top: 25px;
     margin-bottom: 25px;
 
-    ul { 
+    .dropdown {
+        display: none;
+        position: relative;
+
+        @media only screen and (max-width: 576px) {
+            display: inline-block;
+        }     
+
+        .dropbtn {
+            background-color: #04AA6D;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+
+            .img-dropdown {
+                height: 200px;
+                width: 192px;
+            }
+            .a-style-dropdown {
+                text-decoration: none;
+                text-align: center;
+                color: $purple;
+                font-size: 20px;
+                padding: 12px 16px;
+                display: block;
+            }                   
+        }       
+    }
+    
+    .dropdown-content a:hover {background-color: #ddd;}
+    
+    .dropdown:hover .dropdown-content {display: block;}
+    
+    .dropdown:hover .dropbtn {background-color: #3e8e41;} 
+    
+    ul {  
         list-style: none;
         display: flex;
+
+        @media only screen and (max-width: 576px) {
+            display: none;
+        }
 
         li{
             padding: 10px 20px;  
@@ -54,19 +107,30 @@ body {
                 font-size: 28px;
                 font-family: $cursive;
                 text-align: center;
-                background-color: $light-purple;
+                background-color: $aliceblue;
             }
         }   
     }
+    
 }
 
 .container {
     width: 100%;
     display: flex;
 
+    @media only screen and (max-width: 576px) {
+        display: inline-table;
+    }
+
+
     .sidebar-first {
         width: 25%;
         background-color: $light-purple;
+
+        @media only screen and (max-width: 576px) {
+            width: 100%;
+        }
+
 
         .title-sidebar{
             text-align: center;
@@ -88,6 +152,11 @@ body {
         background-color: $light-purple;
         margin-left: 20px;
         margin-right: 20px;  
+
+        @media only screen and (max-width: 576px) {
+            width: 100%;
+            margin: 0;
+        }
         
         .title-content {
             text-align: center;
@@ -103,6 +172,10 @@ body {
     .sidebar-second {
         width: 20%;
         background-color: $light-purple;
+
+        @media only screen and (max-width: 576px) {
+            width: 100%;
+        }
 
         .style-title-sidebar-second {
             font-family: $cursive;
@@ -139,6 +212,10 @@ body {
             height: 245px;
             overflow: hidden;
             background-color: $light-purple ; 
+
+            @media only screen and (max-width: 576px) {
+                width: 100%;
+            }
     
             .style-a-popular-recipe {
                 text-decoration: none;
@@ -165,6 +242,7 @@ body {
                     margin-left: auto;
                     margin-right: auto;
                 }
+                
             }
         }
     }
@@ -175,10 +253,16 @@ body {
         display: block;
         margin-left: 90px;
         margin-bottom: 25px;
+
+        @media only screen and (max-width: 576px) {
+        margin-left: 0;
+        height: 200px;
+        }
     }
 }
 
 .footer{
     text-align: center;
 }
+
 

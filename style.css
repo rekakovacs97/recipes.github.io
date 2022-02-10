@@ -11,9 +11,70 @@ body {
   font-size: 30px;
 }
 
+@media only screen and (max-width: 576px) {
+  .header .style-title-header {
+    font-size: 20px;
+  }
+}
+
 .nav {
   margin-top: 25px;
   margin-bottom: 25px;
+}
+
+.nav .dropdown {
+  display: none;
+  position: relative;
+}
+
+@media only screen and (max-width: 576px) {
+  .nav .dropdown {
+    display: inline-block;
+  }
+}
+
+.nav .dropdown .dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.nav .dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.nav .dropdown .dropdown-content .img-dropdown {
+  height: 200px;
+  width: 192px;
+}
+
+.nav .dropdown .dropdown-content .a-style-dropdown {
+  text-decoration: none;
+  text-align: center;
+  color: #461240;
+  font-size: 20px;
+  padding: 12px 16px;
+  display: block;
+}
+
+.nav .dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.nav .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.nav .dropdown:hover .dropbtn {
+  background-color: #3e8e41;
 }
 
 .nav ul {
@@ -21,6 +82,12 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media only screen and (max-width: 576px) {
+  .nav ul {
+    display: none;
+  }
 }
 
 .nav ul li {
@@ -41,7 +108,7 @@ body {
   font-size: 28px;
   font-family: cursive;
   text-align: center;
-  background-color: #a0a0c2;
+  background-color: #eedac7;
 }
 
 .container {
@@ -51,9 +118,21 @@ body {
   display: flex;
 }
 
+@media only screen and (max-width: 576px) {
+  .container {
+    display: inline-table;
+  }
+}
+
 .container .sidebar-first {
   width: 25%;
   background-color: #a0a0c2;
+}
+
+@media only screen and (max-width: 576px) {
+  .container .sidebar-first {
+    width: 100%;
+  }
 }
 
 .container .sidebar-first .title-sidebar {
@@ -77,6 +156,13 @@ body {
   margin-right: 20px;
 }
 
+@media only screen and (max-width: 576px) {
+  .container .content {
+    width: 100%;
+    margin: 0;
+  }
+}
+
 .container .content .title-content {
   text-align: center;
   font-family: cursive;
@@ -90,6 +176,12 @@ body {
 .container .sidebar-second {
   width: 20%;
   background-color: #a0a0c2;
+}
+
+@media only screen and (max-width: 576px) {
+  .container .sidebar-second {
+    width: 100%;
+  }
 }
 
 .container .sidebar-second .style-title-sidebar-second {
@@ -127,6 +219,12 @@ body {
   background-color: #a0a0c2;
 }
 
+@media only screen and (max-width: 576px) {
+  .second-container .popular-recipes-wrapp .popular-recipes {
+    width: 100%;
+  }
+}
+
 .second-container .popular-recipes-wrapp .popular-recipes .style-a-popular-recipe {
   text-decoration: none;
 }
@@ -158,6 +256,13 @@ body {
   display: block;
   margin-left: 90px;
   margin-bottom: 25px;
+}
+
+@media only screen and (max-width: 576px) {
+  .third-container .style-img-third-container {
+    margin-left: 0;
+    height: 200px;
+  }
 }
 
 .footer {
