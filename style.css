@@ -1,6 +1,6 @@
 body {
   margin: 20px;
-  background-color: #d7ccc0;
+  background-color: #f8f4f0;
 }
 
 .header {
@@ -29,7 +29,7 @@ body {
 
 .nav ul li .style-a-nav {
   text-decoration: none;
-  color: aliceblue;
+  color: #a0a0c2;
 }
 
 .nav ul li .img-nav {
@@ -53,7 +53,7 @@ body {
 
 .container .sidebar-first {
   width: 25%;
-  background-color: rgba(145, 151, 240, 0.856);
+  background-color: #a0a0c2;
 }
 
 .container .sidebar-first .title-sidebar {
@@ -72,7 +72,7 @@ body {
 
 .container .content {
   width: calc(55% - 40px);
-  background-color: #7c7ca8;
+  background-color: #a0a0c2;
   margin-left: 20px;
   margin-right: 20px;
 }
@@ -89,7 +89,7 @@ body {
 
 .container .sidebar-second {
   width: 20%;
-  background-color: #a89deb;
+  background-color: #a0a0c2;
 }
 
 .container .sidebar-second .style-title-sidebar-second {
@@ -124,7 +124,7 @@ body {
   width: calc((100% - 40px) / 5);
   height: 245px;
   overflow: hidden;
-  background-color: #9f90f5;
+  background-color: #a0a0c2;
 }
 
 .second-container .popular-recipes-wrapp .popular-recipes .style-a-popular-recipe {
@@ -161,7 +161,6 @@ body {
 }
 
 .footer {
-  background-color: chartreuse;
   text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

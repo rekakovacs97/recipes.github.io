@@ -1,10 +1,28 @@
+// screen breakpoints
+$screen-xs: 576px;
+$screen-sm: 768px;
+$screen-md: 1024px;
+$screen-lg: 1280px;
+$screen-xl: 1350px;
+
+//colors
+$grey : #f8f4f0 ;
+$aliceblue: #eedac7;
+$light-purple: #a0a0c2;
+$purple: #461240;
+$white: #f8f9fb;
+
+//font-family 
+$cursive : cursive;
+
+
 body {
     margin: 20px;
-    background-color: #d7ccc0;
+    background-color: $grey;
 }
 
 .header {
-    font-family: cursive;
+    font-family: $cursive;
     
     .style-title-header{
         font-size: 30px;
@@ -24,7 +42,7 @@ body {
 
             .style-a-nav {
                 text-decoration: none;
-                color: aliceblue;
+                color: $light-purple;
             }
 
             .img-nav {
@@ -34,9 +52,9 @@ body {
 
             .stylefigcaption{
                 font-size: 28px;
-                font-family: cursive;
+                font-family: $cursive;
                 text-align: center;
-                background-color: rgb(160, 160, 194);
+                background-color: $light-purple;
             }
         }   
     }
@@ -48,12 +66,12 @@ body {
 
     .sidebar-first {
         width: 25%;
-        background-color: rgba(145, 151, 240, 0.856);
+        background-color: $light-purple;
 
         .title-sidebar{
             text-align: center;
-            font-family: cursive;
-            color: #461240;
+            font-family: $cursive;
+            color: $purple;
         }
 
         .img-recipe {
@@ -67,14 +85,14 @@ body {
 
     .content {
         width: calc(55% - 40px);
-        background-color: rgb(124, 124, 168);
+        background-color: $light-purple;
         margin-left: 20px;
         margin-right: 20px;  
         
         .title-content {
             text-align: center;
-            font-family: cursive;
-            color: #461240;
+            font-family: $cursive;
+            color:  $purple;
             }
         
         .elements-content {
@@ -84,12 +102,12 @@ body {
 
     .sidebar-second {
         width: 20%;
-        background-color: rgb(168, 157, 235);
+        background-color: $light-purple;
 
         .style-title-sidebar-second {
-            font-family: cursive;
+            font-family: $cursive;
             text-align: center;          
-            color: #461240;
+            color: $purple;
         }
 
         .checklist-container{
@@ -104,7 +122,7 @@ body {
     font-size: 0;
 
     .style-title-second-container {
-        font-family: cursive;
+        font-family: $cursive;
         font-size: 20px;
     }
 
@@ -120,7 +138,7 @@ body {
             width: calc((100% - 40px) / 5) ;
             height: 245px;
             overflow: hidden;
-            background-color: #9f90f5 ; 
+            background-color: $light-purple ; 
     
             .style-a-popular-recipe {
                 text-decoration: none;
@@ -129,8 +147,8 @@ body {
                     margin: 0;
                     font-size: 20px;
                     text-align: center;
-                    font-family: cursive;
-                    color: #f8f9fb;
+                    font-family: $cursive;
+                    color: $white;
                     padding: 5px;
                 }
     
@@ -161,7 +179,6 @@ body {
 }
 
 .footer{
-    background-color: chartreuse;
     text-align: center;
 }
 
