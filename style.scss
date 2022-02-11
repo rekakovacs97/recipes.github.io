@@ -11,6 +11,7 @@ $aliceblue: #eedac7;
 $light-purple: #a0a0c2;
 $purple: #461240;
 $white: #f8f9fb;
+$lightgrey: #8d9593;
 
 //font-family 
 $cursive : cursive;
@@ -25,10 +26,16 @@ body {
     font-family: $cursive;
     
     .style-title-header{
-        font-size: 30px;
+        font-size: 20px;
 
-        @media only screen and (max-width: 576px) {
-            font-size: 20px;
+        @media only screen and (min-width: $screen-xs) {
+            font-size: 30px;
+        }
+        
+        font-size: 44px
+        ;
+        @media only screen and (min-width: $screen-sm) {
+            font-size: 43px;
         }
     }
 }
@@ -38,16 +45,16 @@ body {
     margin-bottom: 25px;
 
     .dropdown {
-        display: none;
+        display: inline-block;
         position: relative;
 
-        @media only screen and (max-width: 576px) {
-            display: inline-block;
-        }     
+        @media only screen and (min-width: $screen-xs) {
+            display: none;
+        } 
 
         .dropbtn {
             background-color: #04AA6D;
-            color: white;
+            color: $white;
             padding: 16px;
             font-size: 16px;
             border: none;
@@ -76,22 +83,39 @@ body {
         }       
     }
     
-    .dropdown-content a:hover {background-color: #ddd;}
+    .dropdown-content a:hover {background-color: $white;}
     
     .dropdown:hover .dropdown-content {display: block;}
     
-    .dropdown:hover .dropbtn {background-color: #3e8e41;} 
+    .dropdown:hover .dropbtn {background-color: $purple;} 
     
     ul {  
         list-style: none;
-        display: flex;
+        display: none;
 
-        @media only screen and (max-width: 576px) {
-            display: none;
+        @media only screen and (min-width: $screen-xs) {
+            display: flex;
+            padding-left: 0px;
         }
+
+        /*@media only screen and (min-width: 768px) {         
+       
+        }
+
+        @media only screen and (min-width: 1024px) {
+                
+        } nem kell irni semmit mert elotte ott van*/
 
         li{
             padding: 10px 20px;  
+
+            @media only screen and (min-width: $screen-sm) {                 
+            padding: 5px 10px;
+            }
+
+            @media only screen and (min-width: $screen-md) {                 
+                padding: 10px 20px;
+                }
 
             .style-a-nav {
                 text-decoration: none;
@@ -100,7 +124,22 @@ body {
 
             .img-nav {
                 width: 270px;
-                height: 255px;    
+                height: 255px;  
+                
+                @media only screen and (min-width: $screen-sm) {                 
+                width: 155px;
+                height: 159px;
+                }
+
+                @media only screen and (min-width: $screen-md) {                 
+                    width: 202px;
+                    height: 186px;
+                }
+
+                @media only screen and (min-width: $screen-lg) {                  
+                    width: 275px;
+                    height: 280px;
+                }
             }
 
             .stylefigcaption{
@@ -108,6 +147,10 @@ body {
                 font-family: $cursive;
                 text-align: center;
                 background-color: $aliceblue;
+
+                @media only screen and (min-width: $screen-sm) {                 
+                font-size: 24px;
+                }
             }
         }   
     }
@@ -117,21 +160,23 @@ body {
 .container {
     width: 100%;
     display: flex;
+    flex-direction: column;
 
-    @media only screen and (max-width: 576px) {
-        display: inline-table;
+    @media only screen and (min-width: $screen-xs) {
+        flex-direction: row;
     }
 
-
     .sidebar-first {
-        width: 25%;
+        width: 100%;
         background-color: $light-purple;
 
-        @media only screen and (max-width: 576px) {
-            width: 100%;
+        @media only screen and (min-width: $screen-sm) {
+            width: 50%;
         }
 
-
+        @media only screen and (min-width: $screen-md) {
+            width: 25%;
+        }
         .title-sidebar{
             text-align: center;
             font-family: $cursive;
@@ -139,25 +184,33 @@ body {
         }
 
         .img-recipe {
-            width: 266x;
-            height: 304px;
+            width: 80%;
             display: block;
             margin-left: auto;
             margin-right: auto;
         }
+
+        .img-groucherielist{
+            @media only screen and (min-width: $screen-md) {
+                display: none;
+            }
+        }
     }
 
     .content {
-        width: calc(55% - 40px);
+        width: 100%;
         background-color: $light-purple;
-        margin-left: 20px;
-        margin-right: 20px;  
+        margin: 0;
 
-        @media only screen and (max-width: 576px) {
-            width: 100%;
-            margin: 0;
+        @media only screen and (min-width: $screen-xs) {
+            width: calc(55% - 40px);
+            margin-left: 20px;
+            margin-right: 20px;
         }
         
+        @media only screen and (min-width: $screen-md) {
+            width: 50%;
+        }
         .title-content {
             text-align: center;
             font-family: $cursive;
@@ -170,11 +223,20 @@ body {
     }
 
     .sidebar-second {
-        width: 20%;
+        width: 100%;
         background-color: $light-purple;
 
-        @media only screen and (max-width: 576px) {
-            width: 100%;
+        @media only screen and (min-width: $screen-xs) {
+            width: 20%;
+        }
+
+        @media only screen and (min-width: $screen-sm) {
+            display: none;
+        }
+
+        @media only screen and (min-width: $screen-md) {
+            display: block;
+            width: 25%;
         }
 
         .style-title-sidebar-second {
@@ -191,8 +253,21 @@ body {
 }
 
 .second-container {
-    background-color: a89deb;
-    font-size: 0;
+    background-color: $light-purple;
+
+    @media only scrren and (min-width: $screen-sm) {
+        font-size: 0;
+
+        .popular-recipes:nth-child(3n) {
+            margin-right: 0;
+        }
+    }
+
+    @media only screen and (min-width: $screen-md) {
+        .popular-recipes:nth-child(5n) {
+            margin-right: 0;
+        }
+    }
 
     .style-title-second-container {
         font-family: $cursive;
@@ -200,23 +275,42 @@ body {
     }
 
     .popular-recipes-wrapp{ 
-        .popular-recipes:nth-child(5n) {
-            margin-right: 0;
-        }        
+
+        @media only screen and (min-width: $screen-sm) {
+            font-size: 0;
+            .popular-recipes:nth-child(3n) {
+                margin-right: 0;
+            }
+        }
+
+        @media only screen and (min-width: $screen-md) {
+            .popular-recipes:nth-child(3n) {
+                margin-right: 10px;
+            }
+
+            .popular-recipes:nth-child(5n) {
+                margin-right: 0;
+            }
+        }
+
 
         .popular-recipes {
             margin-bottom: 10px;
             display: inline-block;
             margin-right: 10px;
-            width: calc((100% - 40px) / 5) ;
+            width: 100%;          
             height: 245px;
             overflow: hidden;
-            background-color: $light-purple ; 
+            background-color: $lightgrey ; 
 
-            @media only screen and (max-width: 576px) {
-                width: 100%;
+            @media only screen and (min-width: $screen-sm) {
+                width: calc((100% - 20px) / 3) ;
             }
-    
+
+            @media only screen and (min-width: $screen-md) {
+                width: calc((100% - 40px) / 5) ;
+            }
+   
             .style-a-popular-recipe {
                 text-decoration: none;
             
@@ -250,13 +344,12 @@ body {
 
 .third-container {
     .style-img-third-container {
-        display: block;
-        margin-left: 90px;
+        //display: block;
         margin-bottom: 25px;
+        width: 320px;
 
-        @media only screen and (max-width: 576px) {
-        margin-left: 0;
-        height: 200px;
+        @media only screen and (min-width: $screen-xs) {
+            margin-left: 90px;
         }
     }
 }

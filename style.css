@@ -8,12 +8,19 @@ body {
 }
 
 .header .style-title-header {
-  font-size: 30px;
+  font-size: 20px;
+  font-size: 44px;
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (min-width: 576px) {
   .header .style-title-header {
-    font-size: 20px;
+    font-size: 30px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .header .style-title-header {
+    font-size: 43px;
   }
 }
 
@@ -23,19 +30,19 @@ body {
 }
 
 .nav .dropdown {
-  display: none;
+  display: inline-block;
   position: relative;
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (min-width: 576px) {
   .nav .dropdown {
-    display: inline-block;
+    display: none;
   }
 }
 
 .nav .dropdown .dropbtn {
   background-color: #04AA6D;
-  color: white;
+  color: #f8f9fb;
   padding: 16px;
   font-size: 16px;
   border: none;
@@ -66,7 +73,7 @@ body {
 }
 
 .nav .dropdown-content a:hover {
-  background-color: #ddd;
+  background-color: #f8f9fb;
 }
 
 .nav .dropdown:hover .dropdown-content {
@@ -74,24 +81,44 @@ body {
 }
 
 .nav .dropdown:hover .dropbtn {
-  background-color: #3e8e41;
+  background-color: #461240;
 }
 
 .nav ul {
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
+  /*@media only screen and (min-width: 768px) {         
+       
+        }
+
+        @media only screen and (min-width: 1024px) {
+                
+        } nem kell irni semmit mert elotte ott van*/
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (min-width: 576px) {
   .nav ul {
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 0px;
   }
 }
 
 .nav ul li {
   padding: 10px 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .nav ul li {
+    padding: 5px 10px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .nav ul li {
+    padding: 10px 20px;
+  }
 }
 
 .nav ul li .style-a-nav {
@@ -104,6 +131,27 @@ body {
   height: 255px;
 }
 
+@media only screen and (min-width: 768px) {
+  .nav ul li .img-nav {
+    width: 155px;
+    height: 159px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .nav ul li .img-nav {
+    width: 202px;
+    height: 186px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .nav ul li .img-nav {
+    width: 275px;
+    height: 280px;
+  }
+}
+
 .nav ul li .stylefigcaption {
   font-size: 28px;
   font-family: cursive;
@@ -111,27 +159,46 @@ body {
   background-color: #eedac7;
 }
 
+@media only screen and (min-width: 768px) {
+  .nav ul li .stylefigcaption {
+    font-size: 24px;
+  }
+}
+
 .container {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (min-width: 576px) {
   .container {
-    display: inline-table;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
 .container .sidebar-first {
-  width: 25%;
+  width: 100%;
   background-color: #a0a0c2;
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (min-width: 768px) {
   .container .sidebar-first {
-    width: 100%;
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .container .sidebar-first {
+    width: 25%;
   }
 }
 
@@ -142,24 +209,35 @@ body {
 }
 
 .container .sidebar-first .img-recipe {
-  width: 266x;
-  height: 304px;
+  width: 80%;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-.container .content {
-  width: calc(55% - 40px);
-  background-color: #a0a0c2;
-  margin-left: 20px;
-  margin-right: 20px;
+@media only screen and (min-width: 1024px) {
+  .container .sidebar-first .img-groucherielist {
+    display: none;
+  }
 }
 
-@media only screen and (max-width: 576px) {
+.container .content {
+  width: 100%;
+  background-color: #a0a0c2;
+  margin: 0;
+}
+
+@media only screen and (min-width: 576px) {
   .container .content {
-    width: 100%;
-    margin: 0;
+    width: calc(55% - 40px);
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .container .content {
+    width: 50%;
   }
 }
 
@@ -174,13 +252,26 @@ body {
 }
 
 .container .sidebar-second {
-  width: 20%;
+  width: 100%;
   background-color: #a0a0c2;
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (min-width: 576px) {
   .container .sidebar-second {
-    width: 100%;
+    width: 20%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .container .sidebar-second {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .container .sidebar-second {
+    display: block;
+    width: 25%;
   }
 }
 
@@ -196,8 +287,22 @@ body {
 }
 
 .second-container {
-  background-color: a89deb;
-  font-size: 0;
+  background-color: #a0a0c2;
+}
+
+@media only scrren and (min-width: 768px) {
+  .second-container {
+    font-size: 0;
+  }
+  .second-container .popular-recipes:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .second-container .popular-recipes:nth-child(5n) {
+    margin-right: 0;
+  }
 }
 
 .second-container .style-title-second-container {
@@ -205,23 +310,43 @@ body {
   font-size: 20px;
 }
 
-.second-container .popular-recipes-wrapp .popular-recipes:nth-child(5n) {
-  margin-right: 0;
+@media only screen and (min-width: 768px) {
+  .second-container .popular-recipes-wrapp {
+    font-size: 0;
+  }
+  .second-container .popular-recipes-wrapp .popular-recipes:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .second-container .popular-recipes-wrapp .popular-recipes:nth-child(3n) {
+    margin-right: 10px;
+  }
+  .second-container .popular-recipes-wrapp .popular-recipes:nth-child(5n) {
+    margin-right: 0;
+  }
 }
 
 .second-container .popular-recipes-wrapp .popular-recipes {
   margin-bottom: 10px;
   display: inline-block;
   margin-right: 10px;
-  width: calc((100% - 40px) / 5);
+  width: 100%;
   height: 245px;
   overflow: hidden;
-  background-color: #a0a0c2;
+  background-color: #8d9593;
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (min-width: 768px) {
   .second-container .popular-recipes-wrapp .popular-recipes {
-    width: 100%;
+    width: calc((100% - 20px) / 3);
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .second-container .popular-recipes-wrapp .popular-recipes {
+    width: calc((100% - 40px) / 5);
   }
 }
 
@@ -253,15 +378,13 @@ body {
 }
 
 .third-container .style-img-third-container {
-  display: block;
-  margin-left: 90px;
   margin-bottom: 25px;
+  width: 320px;
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (min-width: 576px) {
   .third-container .style-img-third-container {
-    margin-left: 0;
-    height: 200px;
+    margin-left: 90px;
   }
 }
 
