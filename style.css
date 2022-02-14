@@ -41,10 +41,10 @@ body {
 }
 
 .nav .dropdown .dropbtn {
-  background-color: #04AA6D;
+  background-color: #461240;
   color: #f8f9fb;
   padding: 16px;
-  font-size: 16px;
+  font-size: 25px;
   border: none;
 }
 
@@ -206,6 +206,7 @@ body {
   text-align: center;
   font-family: cursive;
   color: #461240;
+  font-size: 30px;
 }
 
 .container .sidebar-first .img-recipe {
@@ -213,6 +214,10 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.container .sidebar-first .img-groucherielist {
+  display: none;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -224,7 +229,8 @@ body {
 .container .content {
   width: 100%;
   background-color: #a0a0c2;
-  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 @media only screen and (min-width: 576px) {
@@ -242,13 +248,15 @@ body {
 }
 
 .container .content .title-content {
+  font-size: 30px;
   text-align: center;
   font-family: cursive;
   color: #461240;
 }
 
 .container .content .elements-content {
-  font-size: 20px;
+  font-size: 25px;
+  padding: 10px;
 }
 
 .container .sidebar-second {
@@ -279,11 +287,17 @@ body {
   font-family: cursive;
   text-align: center;
   color: #461240;
+  font-size: 30px;
 }
 
 .container .sidebar-second .checklist-container {
   padding: 0 15px 15px 15px;
   font-size: 18px;
+}
+
+.container .sidebar-second .checklist-container .style-checkbox {
+  font-size: 25px;
+  padding: 10px;
 }
 
 .second-container {
@@ -307,7 +321,9 @@ body {
 
 .second-container .style-title-second-container {
   font-family: cursive;
-  font-size: 20px;
+  font-size: 30px;
+  color: #461240;
+  text-align: center;
 }
 
 @media only screen and (min-width: 768px) {
@@ -356,10 +372,10 @@ body {
 
 .second-container .popular-recipes-wrapp .popular-recipes .style-a-popular-recipe .style-title-popular-recipes {
   margin: 0;
-  font-size: 20px;
+  font-size: 25px;
   text-align: center;
   font-family: cursive;
-  color: #f8f9fb;
+  color: #461240;
   padding: 5px;
 }
 
@@ -377,15 +393,41 @@ body {
   margin-right: auto;
 }
 
+.third-container {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #a0a0c2;
+}
+
+.third-container .style-title-third-container {
+  font-size: 30px;
+  text-align: center;
+  color: purple;
+}
+
+.third-container .style-h3-third-container {
+  font-size: 25px;
+  padding: 5px;
+}
+
 .third-container .style-img-third-container {
-  margin-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
   width: 320px;
 }
 
 @media only screen and (min-width: 576px) {
   .third-container .style-img-third-container {
-    margin-left: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
   }
+}
+
+.third-container .style-p-third-container {
+  padding: 0 15px 0 15px;
+  font-size: 25px;
 }
 
 .footer {
