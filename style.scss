@@ -41,8 +41,7 @@ body {
 }
 
 .nav {
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin: 25px 15px 25px 15px;
 
     .dropdown {
         display: inline-block;
@@ -215,6 +214,7 @@ body {
         
         @media only screen and (min-width: $screen-md) {
             width: 50%;
+
         }
 
         .title-content {
@@ -397,5 +397,3 @@ body {
 .footer{
     text-align: center;
 }
-
-
