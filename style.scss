@@ -16,7 +16,6 @@ $lightgrey: #8d9593;
 //font-family 
 $cursive : cursive;
 
-
 body {
     margin: 20px;
     background-color: $grey;
@@ -97,14 +96,6 @@ body {
             padding-left: 0px;
         }
 
-        /*@media only screen and (min-width: 768px) {         
-       
-        }
-
-        @media only screen and (min-width: 1024px) {
-                
-        } nem kell irni semmit mert elotte ott van*/
-
         li{
             padding: 10px 20px;  
 
@@ -152,8 +143,7 @@ body {
                 }
             }
         }   
-    }
-    
+    }  
 }
 
 .container {
@@ -191,10 +181,29 @@ body {
         }
 
         .img-groucherielist{
-
             display: none;
+
+            @media only screen and (min-width: $screen-sm) {
+                display: block;
+            }
+            
             @media only screen and (min-width: $screen-md) {
                 display: none;
+            }
+
+            .style-title-sidebar-first{
+                font-size: 25px;
+                text-align: center;
+                color: $purple;
+            }
+
+            .checklist-container-sidebar-first {
+                padding: 0 15px 5px 15px;
+                font-size: 24px;
+            }
+
+            .style-checkbox-sidebar-first{
+                padding: 5px 10px 5px 10px;
             }
         }
     }
@@ -207,14 +216,11 @@ body {
         margin-bottom: 10px;
 
         @media only screen and (min-width: $screen-xs) {
-            width: calc(55% - 40px);
-            margin-left: 20px;
-            margin-right: 20px;
+            margin: 0 20px 0 20px;
         }
         
         @media only screen and (min-width: $screen-md) {
             width: 50%;
-
         }
 
         .title-content {
@@ -351,8 +357,7 @@ body {
                     display: block;
                     margin-left: auto;
                     margin-right: auto;
-                }
-                
+                }                
             }
         }
     }

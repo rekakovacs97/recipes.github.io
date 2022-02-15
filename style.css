@@ -86,13 +86,6 @@ body {
 .nav ul {
   list-style: none;
   display: none;
-  /*@media only screen and (min-width: 768px) {         
-       
-        }
-
-        @media only screen and (min-width: 1024px) {
-                
-        } nem kell irni semmit mert elotte ott van*/
 }
 
 @media only screen and (min-width: 576px) {
@@ -219,10 +212,31 @@ body {
   display: none;
 }
 
+@media only screen and (min-width: 768px) {
+  .container .sidebar-first .img-groucherielist {
+    display: block;
+  }
+}
+
 @media only screen and (min-width: 1024px) {
   .container .sidebar-first .img-groucherielist {
     display: none;
   }
+}
+
+.container .sidebar-first .img-groucherielist .style-title-sidebar-first {
+  font-size: 25px;
+  text-align: center;
+  color: #461240;
+}
+
+.container .sidebar-first .img-groucherielist .checklist-container-sidebar-first {
+  padding: 0 15px 5px 15px;
+  font-size: 24px;
+}
+
+.container .sidebar-first .img-groucherielist .style-checkbox-sidebar-first {
+  padding: 5px 10px 5px 10px;
 }
 
 .container .content {
@@ -234,9 +248,7 @@ body {
 
 @media only screen and (min-width: 576px) {
   .container .content {
-    width: calc(55% - 40px);
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 0 20px 0 20px;
   }
 }
 
