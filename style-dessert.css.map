@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,kBAAkB,CAAC;EACf,KAAK,EAAE,IAAI;EACX,OAAO,EAAE,IAAI;CAUhB;;AAZD,AAII,kBAJc,CAId,gBAAgB,CAAC;EACb,KAAK,EAAE,GAAG;CACb;;AANL,AAQI,kBARc,CAQd,iBAAiB,CAAC;EACd,KAAK,EAAE,GAAG;EACV,gBAAgB,EAAE,IAAI;CACzB",
+    "sources": [
+        "style-dessert.scss"
+    ],
+    "names": [],
+    "file": "style-dessert.css"
+}

@@ -1,0 +1,16 @@
+.container-dessert {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container-dessert .container-first {
+  width: 50%;
+}
+
+.container-dessert .container-second {
+  width: 50%;
+  background-color: aqua;
+}
+/*# sourceMappingURL=style-dessert.css.map */

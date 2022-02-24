@@ -1,0 +1,13 @@
+.container-dessert {
+    width: 100%;
+    display: flex;
+
+    .container-first {
+        width: 50%;
+    }
+
+    .container-second {
+        width: 50%;
+        background-color: aqua;
+    }
+}
